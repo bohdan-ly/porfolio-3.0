@@ -2,7 +2,7 @@ import React from 'react';
 
 export const About = () => {
   return (
-    <div className="w-full md:w-1/2 h-full p-10 flex flex-col items-center">
+    <div className="w-full md:w-1/2 h-full p-10 px-4 lg:px-10 flex flex-col items-center">
       <div className="h-24 w-24 rounded-full overflow-hidden relative shadow-lg">
         <img src="/me.jpg" className="w-auto absolute" />
       </div>

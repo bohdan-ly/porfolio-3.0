@@ -14,7 +14,7 @@ export const Footer = () => {
   };
   return (
     <footer className="bg-white dark:bg-zinc-900">
-      <div className="mx-auto w-full max-w-screen-xl p-12 py-8 lg:py-10">
+      <div className="mx-auto w-full max-w-screen-xl p-6 py-8 lg:py-10">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="/" className="-m-1.5 p-1.5">

@@ -69,7 +69,7 @@ export const Header = ({ toggleTheme }) => {
       )}
     >
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between px-12 p-2 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-6 p-2 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -101,71 +101,65 @@ export const Header = ({ toggleTheme }) => {
               />
             </svg>
           </button>
-          {createPortal(
-            <div
-              ref={menuRef}
-              id="user-dropdown"
-              className={classNames(
-                'z-50 top-16 right-10 fixed border transition-all flex flex-col lg:hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow',
-                {
-                  'translate-x-0': showMenu,
-                  'translate-x-[150%]': !showMenu,
-                  // fixed: headerRef.current && [...headerRef.current.classList].includes('show'),
-                  // absolute:
-                  //   !headerRef.current || ![...headerRef.current.classList].includes('show'),
-                },
-              )}
-            >
-              <div className="px-4 py-3">
-                <span className="block text-sm text-gray-900 dark:text-white">Bohdan Ly</span>
-                <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
-                  bohdan.ly.v@gmail.com
-                </span>
-                <Button
-                  className="cursor-pointer mt-4"
-                  title={
-                    theme ? (
-                      <SunIcon className="text-orange-400 h-6 w-6" />
-                    ) : (
-                      <MoonIcon className="text-indigo-400 h-6 w-6" />
-                    )
-                  }
-                  onClick={toggleTheme}
-                />
-              </div>
-              <ul className="py-2" aria-labelledby="user-menu-button">
-                <li>
-                  <a
-                    href="/"
-                    onClick={(e) => linkNav(e, '/')}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >
-                    {t('Home')}
-                  </a>
-                </li>
+          {showMenu &&
+            createPortal(
+              <div
+                ref={menuRef}
+                id="user-dropdown"
+                className={classNames(
+                  'z-50 top-16 right-10 fixed border transition-all flex flex-col lg:hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow',
+                )}
+              >
+                <div className="px-4 py-3">
+                  <span className="block text-sm text-gray-900 dark:text-white">Bohdan Ly</span>
+                  <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">
+                    bohdan.ly.v@gmail.com
+                  </span>
+                  <Button
+                    className="cursor-pointer mt-4"
+                    title={
+                      theme ? (
+                        <SunIcon className="text-orange-400 h-6 w-6" />
+                      ) : (
+                        <MoonIcon className="text-indigo-400 h-6 w-6" />
+                      )
+                    }
+                    onClick={toggleTheme}
+                  />
+                </div>
+                <ul className="py-2" aria-labelledby="user-menu-button">
+                  <li>
+                    <a
+                      href="/"
+                      onClick={(e) => linkNav(e, '/')}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    >
+                      {t('Home')}
+                    </a>
+                  </li>
 
-                <li>
-                  <a
-                    href="/about"
-                    onClick={(e) => linkNav(e, '/about')}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >
-                    {t('About Me')}
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/showcases"
-                    onClick={(e) => linkNav(e, '/showcases')}
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                  >
-                    {t('Showcase')}
-                  </a>
-                </li>
-              </ul>
-            </div>,
-            document.body,
-          )}
+                  <li>
+                    <a
+                      href="/about"
+                      onClick={(e) => linkNav(e, '/about')}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    >
+                      {t('About Me')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/showcases"
+                      onClick={(e) => linkNav(e, '/showcases')}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                    >
+                      {t('Showcase')}
+                    </a>
+                  </li>
+                </ul>
+              </div>,
+              document.body,
+            )}
         </div>
 
         <div className="hidden lg:flex lg:gap-x-12">

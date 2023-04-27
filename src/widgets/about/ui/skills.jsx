@@ -3,7 +3,7 @@ import { Tags } from './tags';
 
 export const Skills = () => {
   return (
-    <div className="w-full md:w-1/2 h-full p-10 flex flex-col items-center">
+    <div className="w-full md:w-1/2 h-full p-10 px-4 lg:px-10 flex flex-col items-center">
       <div className="h-24 w-24 rounded-full flex shadow-lg border border-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"

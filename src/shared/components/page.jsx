@@ -15,7 +15,7 @@ export const Page = ({
         'p-6': !className,
       })}
     >
-      <div className="my-32 mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="my-32 mx-auto max-w-7xl lg:px-8">
         <h2
           className={classNames(titleClassName, titleColor, {
             'text-5xl xl:text-6xl leading-tight font-extrabold text-center capitalize':
