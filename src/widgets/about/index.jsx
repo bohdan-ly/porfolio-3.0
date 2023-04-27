@@ -12,10 +12,12 @@ export const AboutMe = () => {
         <About />
         <Skills />
       </div>
-      <img
-        src={darkTheme ? '/about-me.png' : '/about-me-white.png'}
-        className="about-me-bg w-auto h-[100vh] absolute left-[50%] -translate-x-[50%] opacity-25 top-[60vh]"
-      />
+      <div className="about-me-bg absolute w-[max-content] h-[100vh] left-[50%] -translate-x-[40%] top-0 translate-y-[70%]">
+        <img
+          src={darkTheme ? '/about-me.png' : '/about-me-white.png'}
+          className="w-full h-full opacity-25"
+        />
+      </div>
     </div>
   );
 };
