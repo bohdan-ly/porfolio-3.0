@@ -7,6 +7,12 @@ export const WithTheme = ({ children }) => {
 
   const [isDarkTheme, setDarkTheme] = useLocalStorage('darkTheme', prefersDark || false);
 
+  React.useEffect(() => {
+    if (!JSON.parse(window.localStorage.getItem('darkTheme'))) {
+      window.localStorage.setItem('darkTheme', prefersDark);
+    }
+  }, []);
+
   const toggleTheme = () => {
     setDarkTheme((prevValue) => !prevValue);
   };
