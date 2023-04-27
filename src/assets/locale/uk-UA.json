@@ -1,0 +1,14 @@
+{
+  "key": "Це чудовий день!",
+  "nested": {
+    "key": "Як справи?"
+  },
+  "interpolated": "Гарного дня, {{name}}!",
+  "pluralKey_one": "Це гарний приклад.",
+  "pluralKey_few": "Це гарні приклади.",
+  "pluralKey_many": "Це гарні приклади.",
+  "pluralKey_other": "Це гарні приклади.",
+  "Home": "Головна",
+  "About Me": "Про мене",
+  "Showcase": "Роботи"
+}
