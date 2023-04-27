@@ -1,7 +1,9 @@
 import React from 'react';
 import { Tags } from './tags';
+import { useTranslation } from 'react-i18next';
 
 export const Skills = () => {
+  const { t } = useTranslation();
   return (
     <div className="w-full md:w-1/2 h-full p-10 px-4 lg:px-10 flex flex-col items-center">
       <div className="h-24 w-24 rounded-full flex shadow-lg border border-white">
@@ -30,7 +32,7 @@ export const Skills = () => {
           <Tags />
         </div>
         <p className="text-editor-dark dark:text-zinc-100 mt-10 font-mono text-xl">
-          I competed in events such as:
+          {t('I competed in events such as')}:
         </p>
         <ol className="w-full justify-start text-editor-dark dark:text-zinc-100 font-mono text-lg mt-6 space-y-2 list-disc list-inside">
           <li>INT20H Kyiv</li>

@@ -8,7 +8,7 @@ export const AboutMe = () => {
 
   return (
     <div className="relative min-h-screen">
-      <div className="border-4 border-editor-dark dark:border-zinc-400 divide-x flex flex-col md:flex-row relative z-10 rounded-lg">
+      <div className="border-4 border-editor-dark dark:border-zinc-400 divide-y md:divide-x md:divide-y-0 flex flex-col md:flex-row relative z-10 rounded-lg">
         <About />
         <Skills />
       </div>

@@ -7,7 +7,7 @@ const ShowcasesPage = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Page title="showcases" bg="bg-zinc-100 dark:bg-zinc-900">
+      <Page title={t('Showcase')} bg="bg-zinc-100 dark:bg-zinc-900">
         <Showcases />
       </Page>
     </>

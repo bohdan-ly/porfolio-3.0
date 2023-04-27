@@ -4,9 +4,10 @@
     "key": "How are you?"
   },
   "interpolated": "Have a nice day, {{name}}!",
-  "pluralKey_one": "This is a nice example.",
-  "pluralKey_other": "This are nice examples.",
   "Home": "Home",
   "About Me": "About Me",
-  "Showcase": "Showcase"
+  "Showcase": "Showcase",
+  "about-me": "I'm well-organized, self-motivated, resourceful, and able to motivate others, with excellent communication and interpersonal skills. I'm persistent in achieving the final result, ready to do complex work, and learn new technologies/get new knowledge. I've been creating single-page applications using React and JavaScript for a year. Additionally, I've been practicing web layout design for about two years. I strive to become a successful front-end developer, with my ultimate goal being a great team lead in the future.",
+  "fullName": "Bohdan Ly",
+  "I competed in events such as": "I competed in events such as"
 }
