@@ -3,7 +3,9 @@ import classNames from 'classnames';
 import { useLocalStorage } from 'usehooks-ts';
 
 export const WithTheme = ({ children }) => {
-  const [isDarkTheme, setDarkTheme] = useLocalStorage('darkTheme', true);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const [isDarkTheme, setDarkTheme] = useLocalStorage('darkTheme', prefersDark || false);
 
   const toggleTheme = () => {
     setDarkTheme((prevValue) => !prevValue);
