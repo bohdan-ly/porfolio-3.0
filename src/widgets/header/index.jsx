@@ -32,8 +32,6 @@ export const Header = ({ toggleTheme }) => {
       ![...headerRef.current.classList].includes('show')
     ) {
       headerRef.current.classList.add('show', 'bg-white', 'dark:bg-editor-dark');
-      document.getElementById('user-dropdown').classList.add('fixed');
-      document.getElementById('user-dropdown').classList.remove('absolute');
     }
 
     if (
@@ -42,8 +40,6 @@ export const Header = ({ toggleTheme }) => {
       [...headerRef.current.classList].includes('show')
     ) {
       headerRef.current.classList.remove('show', 'bg-white', 'dark:bg-editor-dark');
-      document.getElementById('user-dropdown').classList.remove('fixed');
-      document.getElementById('user-dropdown').classList.add('absolute');
     }
   };
 
