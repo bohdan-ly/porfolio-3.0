@@ -8,14 +8,14 @@ export const showcases = [
     img: '/redux.png',
     summary: 'Reproducing a simple Redux state-manager on pure JavaScript using design patterns',
     url: '',
-    github: 'https://github.com/bohdan-ly/simple-redux',
+    github: 'https://github.com/bohdan-ly-v/simple-redux',
   },
   {
     title: 'Realty Rift',
     img: '/rent.png',
     summary: 'Coolest CRM for realtors to manage their realty in one place.',
     url: 'https://rent-apart.vercel.app/dashboard',
-    github: 'https://github.com/bohdan-ly/rent-apart',
+    github: 'https://github.com/bohdan-ly-v/realty-rift',
   },
   {
     title: 'Career Crafter',
@@ -23,7 +23,7 @@ export const showcases = [
     summary:
       'Fully responsive and intuitive collaborative platform for developers, recruiters and investors!',
     url: 'https://career-crafter.vercel.app/home',
-    github: 'https://github.com/bohdan-ly/career-crafter',
+    github: 'https://github.com/bohdan-ly-v/career-crafter',
   },
 ];
 

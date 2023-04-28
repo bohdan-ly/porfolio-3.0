@@ -29,7 +29,7 @@ export const Footer = () => {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="/BohdanEngRes.pdf" download className="hover:underline">
+                  <a href="/BohdanLyResume.pdf" download className="hover:underline">
                     {t('My Resume')}
                   </a>
                 </li>
@@ -51,7 +51,7 @@ export const Footer = () => {
               <ul className="text-gray-600 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/bohdan-ly"
+                    href="https://github.com/bohdan-ly-v"
                     target="_blank"
                     className="hover:underline "
                   >
@@ -94,7 +94,11 @@ export const Footer = () => {
             © 2023 Bohdan Ly. {t('All Rights Reserved')}.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="#" className="text-gray-500 hover:text-blue-700 dark:hover:text-blue-400">
+            <a
+              href="https://www.linkedin.com/in/bohdan-ly-v/"
+              target="_blank"
+              className="text-gray-500 hover:text-blue-700 dark:hover:text-blue-400"
+            >
               <svg
                 className="w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +127,11 @@ export const Footer = () => {
               <span className="sr-only">Instagram page</span>
             </a>
 
-            <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <a
+              href="https://github.com/bohdan-ly-v"
+              target="_blank"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            >
               <GitHub />
               <span className="sr-only">GitHub account</span>
             </a>
