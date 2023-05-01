@@ -29,7 +29,7 @@ export const Footer = () => {
               </h2>
               <ul className="text-gray-600 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="/BohdanLyResume.pdf" download className="hover:underline">
+                  <a href="/BohdanLyCV.pdf" download className="hover:underline">
                     {t('My Resume')}
                   </a>
                 </li>

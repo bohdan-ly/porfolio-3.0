@@ -23,7 +23,7 @@ export const WelcomeMessage = () => {
         </p>
         <div className="flex gap-5 flex-col md:flex-row">
           <Button title="Discover" onClick={() => linkNav('/showcases')} />
-          <a href="/BohdanLyResume.pdf" download className="w-full lg:w-auto">
+          <a href="/BohdanLyCV.pdf" download className="w-full lg:w-auto">
             <Button
               title="Download CV"
               className="w-full border transition-all border-gray-400 hover:bg-gray-500 hover:text-white dark:text-white font-medium text-xl py-2 px-8 rounded"

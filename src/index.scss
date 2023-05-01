@@ -3,19 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  // html {
-  //   height: 100vh;
-  //   width: 100vw;
-  //   overflow: hidden;
-  // }
   body {
     height: 100%;
     overflow: hidden auto;
-  }
-
-  header,
-  main {
-    // padding: 0 15% 170px 15%;
   }
 }
 
