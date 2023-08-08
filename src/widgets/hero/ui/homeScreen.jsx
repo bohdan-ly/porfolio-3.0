@@ -5,17 +5,8 @@ import {
   WifiIcon,
 } from '@heroicons/react/24/outline';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 export const HomeScreen = () => {
-  // const navigate = useNavigate();
-
-  // const linkNav = (e, path) => {
-  //   e.preventDefault();
-  //   navigate(path);
-  //   window.scrollTo(0, 0);
-  // };
-
   return (
     <div className="flex items-center justify-center h-[170px] w-[250px] relative z-20">
       <div className="absolute top-4 w-full flex justify-end px-3">
@@ -26,11 +17,11 @@ export const HomeScreen = () => {
         </div>
       </div>
       <a href="/about">
-      <div className="group pointer-events-auto cursor-pointer">
-        <div className="flex flex-col border transition-all dark:border-white rounded-full p-[2px] group-hover:border-indigo-700">
-          <FingerPrintIcon className="h-3 w-3 text-white transition-all group-hover:text-indigo-700" />
+        <div className="group pointer-events-auto cursor-pointer">
+          <div className="flex flex-col border transition-all dark:border-white rounded-full p-[2px] group-hover:border-orange-400">
+            <FingerPrintIcon className="h-3 w-3 text-white transition-all group-hover:text-orange-400" />
+          </div>
         </div>
-      </div>
       </a>
     </div>
   );

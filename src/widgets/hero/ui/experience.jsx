@@ -1,29 +1,21 @@
-import React from 'react';
 import {
-  Float,
-  Environment,
-  Text,
-  useGLTF,
-  PresentationControls,
   ContactShadows,
+  Environment,
+  Float,
   Html,
-  useHelper,
+  PresentationControls,
+  useGLTF,
 } from '@react-three/drei';
-import * as THREE from 'three';
+import React from 'react';
 import { HomeScreen } from './homeScreen';
-import { RectAreaLightHelper } from 'three/addons/helpers/RectAreaLightHelper.js';
 
 export const Experience = () => {
   const computer = useGLTF(
     'https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf',
   );
 
-  // const directionalLight = React.useRef();
-  // useHelper(directionalLight, RectAreaLightHelper, 1);
   return (
     <>
-      <Environment preset="city" />
-
       <PresentationControls
         global
         rotation={[0, -0.4, 0]}
@@ -40,15 +32,10 @@ export const Experience = () => {
           rotation={[0.1, -Math.PI / 2, 0]}
           position={[-3, 0.25, 0]}
         />
+        <ambientLight />
         <Float rotationIntensity={0.25} rotation-y={-1}>
           <primitive object={computer.scene} position={[0.5, -1.2, -1.5]}>
-            <Html
-              transform
-              wrapperclassName="htmlScreen"
-              distanceFactor={5}
-              position={[0, 1.56, -1.4]}
-              rotation-x={-0.256}
-            >
+            <Html transform distanceFactor={5} position={[0, 1.56, -1.4]} rotation-x={-0.256}>
               <HomeScreen />
             </Html>
           </primitive>

@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import Home from './Home';
+import HomePage from './Home';
 import React from 'react';
 
 const lazyLoad = (loadedModule) =>
@@ -18,7 +18,7 @@ const AboutPage = lazyLoad(() => import('./AboutMe'));
 const routersMap = [
   {
     path: '/',
-    element: <Home />,
+    element: <HomePage />,
   },
   {
     path: '/showcases',

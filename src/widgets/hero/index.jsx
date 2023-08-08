@@ -1,7 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense } from 'react';
 import { Experience } from './ui/experience';
-import { Html } from '@react-three/drei';
 
 export const Hero = () => {
   return (

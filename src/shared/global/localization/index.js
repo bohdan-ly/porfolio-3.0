@@ -1,8 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import en from 'assets/locale/en';
-import ua from 'assets/locale/uk-UA';
+import en from 'shared/assets/locale/en';
+import ua from 'shared/assets/locale/uk-UA';
 
 const defaultFallback = 'en';
 const defaultTranslationNamespace = 'translation';
